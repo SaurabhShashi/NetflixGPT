@@ -50,21 +50,3 @@ Netflix GPT is a movie recommendation application enhanced with AI capabilities.
     ```bash
     npm start
     ```
-
-## Features
-
-- **Home Page (for unauthorized users)**
-  - Signin/Signup Page
-    - SignInForm / SignUpForm
-
-- **Browse Page**
-  - Navbar
-  - Showcase
-  - Trendings
-  - Movies Suggestions
-    - Movies List \* N
-
-- **Netflix GPT**
-  - Search
-  - Movies Suggestions
-
