@@ -1,76 +1,70 @@
-<<<<<<< HEAD
-# Netflix GPT
+# Netflix GPT - AI Movie Recommendations
 
-Movies recomandation with AI.
+Netflix GPT is a movie recommendation application enhanced with AI capabilities. This project provides personalized movie suggestions based on user preferences.
 
 ## Setup
 
-- Install react app using create-react-app (CRA)
+1. Install the React app using create-react-app (CRA):
 
-```js
-npx create-react-app netflix-gpt
-```
+    ```bash
+    npx create-react-app netflix-gpt
+    ```
 
-- Create `.env` file and put configure
+2. Create a `.env` file and configure it with your application base URL, OpenAI API key, and TMDB API key:
 
-```js
-REACT_APP_BASE_URL = YOUR_APPLICATION_BASE_URL; // http://localhost:300
-REACT_APP_OPENAI_KEY = YOUR_API_KEY_WILL_HERE;
-REACT_APP_TMDB_KEY = YOUR_API_KEY_WILL_HERE;
-```
+    ```env
+    REACT_APP_BASE_URL = YOUR_APPLICATION_BASE_URL; // http://localhost:3000
+    REACT_APP_OPENAI_KEY = YOUR_API_KEY_WILL_HERE;
+    REACT_APP_TMDB_KEY = YOUR_API_KEY_WILL_HERE;
+    ```
 
-- Install and init tailwind css
+3. Install and initialize Tailwind CSS:
 
-```js
-npm install -D tailwindcss
-npx tailwindcss init
-```
+    ```bash
+    npm install -D tailwindcss
+    npx tailwindcss init
+    ```
 
-- Configure tailwind css in your project
+4. Configure Tailwind CSS in your project by updating `tailwind.config.js`:
 
-  `npx tailwindcss init` command will create a file `tailwind.config.js` in your project's root directory.
-  Open `tailwind.config.js` and replace all content with below code.
+    ```js
+    module.exports = {
+      content: ["./src/**/*.{js,jsx,ts,tsx}"],
+      theme: {
+        extend: {},
+      },
+      plugins: [],
+    };
+    ```
 
-```js
-/** @type {import('tailwindcss').Config} */
-module.exports = {
-  content: ["./src/**/*.{js,jsx,ts,tsx}"],
-  theme: {
-    extend: {},
-  },
-  plugins: [],
-};
-```
+5. Add the Tailwind CSS directives to your `./src/index.css` file:
 
-- Add the @tailwind directives for each of Tailwind’s layers to your ./src/index.css file.
+    ```css
+    @tailwind base;
+    @tailwind components;
+    @tailwind utilities;
+    ```
 
-```css
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-```
+6. Start your local development server:
 
-- Now you created a react app with tailwind css successfully. Now run the below command on your terminal to start your local development server.
-
-```js
-npm start
-```
+    ```bash
+    npm start
+    ```
 
 ## Features
 
-- Home Page (is user !authorised)
-
+- **Home Page (for unauthorized users)**
   - Signin/Signup Page
     - SignInForm / SignUpForm
 
-- Browse Page
-
+- **Browse Page**
   - Navbar
   - Showcase
   - Trendings
-  - MoviesSuggestion
-    - MoviesList \* N
+  - Movies Suggestions
+    - Movies List \* N
 
-- NetflixGPT
+- **Netflix GPT**
   - Search
-  - MoviesSuggestion
+  - Movies Suggestions
+
