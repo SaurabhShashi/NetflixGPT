@@ -17,9 +17,9 @@ Netflix GPT is an innovative movie recommendation application that harnesses the
 ## Tech Stack
 
 - **React:** Frontend framework for building user interfaces.
-- **TMDB:** Movie database for fetching movie details.
 - **Firebase:** Authentication and hosting platform.
 - **OpenAI:** Movie recommendation engine.
+- **TMDB:** Movie database for fetching movie details.
 
 ## Setup
 
